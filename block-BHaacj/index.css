@@ -57,7 +57,9 @@ body {
 .container{
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 32px;
+    /*padding: 0 32px;*/
+    width: 100%;
+    box-shadow: 1px 1px 6px  rgba(0,0,0,0.3);
 }
 
 
@@ -65,4 +67,323 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padding {
+   padding: 80px 0;
+}
+
+.flex-20 {
+    flex: 0 1 20%;
+}
+
+.flex-30 {
+    flex: 0 1 30%;
+}
+
+.flex-50 {
+    flex: 0 1 50%;
+}
+
+.grow {
+    flex: 1 1 auto;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 16px;
+    text-transform: uppercase;
+}
+
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--primary);
+}
+
+/*variables*/
+
+:root {
+    --primary: rgb(105,198 ,187);
+    --secondary: rgb(198,105,149);
+    --textdark: rgb(33,37,41);
+    --textlight:rgb(230,230,230);
+}
+
+
+/*header*/
+
+
+.navbar{
+    padding: 32px 160px;
+}
+
+.navbar .container {
+    box-shadow: none;
+}
+.brand {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--textdark);
+}
+
+.brand img {
+margin-right: 6px;
+}
+
+
+.nav-menu-items{
+    margin-left: 56px;
+}
+
+.nav-menu-items a {
+    color: var(--textdark);
+    font-size: 16px;
+}
+
+
+.nav-menu-items .active {
+    color: var(--primary);
+}
+
+/* main*/
+main {
+    background-color: #e6e6e6;
+}
+
+
+/*hero*/
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./assets/banner.jpg);
+    background-size: cover;
+    padding: 120px 0;
+    text-align: center;
+}
+
+.hero-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    font-size: 64px;
+}
+
+.dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: white;
+    /*display: inline-block;*/
+}
+
+.dot-active {
+    width: 16px;
+    height: 16px;
+    margin: 4px 0;
+}
+.hero-subheading {
+    color: white;
+    margin-top: 16px;
+    font-size: 32px;
+}
+
+
+.icon-box{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--primary);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+
+.icon-box i {
+    color: white;
+    font-size: 18px;
+}
+
+
+/*form*/
+
+form {
+    background: white;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 16px;
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    color: var(--textdark);
+    font-size: 14px;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 8px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 12px 20px;
+    border: 1px solid transparent;
+    color: var(--textlight);
+}
+
+.form-control:focus{
+    border: 1px solid var(--primary);
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.flex-46 {
+    flex: 0 1 46%;
+}
+
+.margin-top {
+    margin-top: 32px;
+}
+
+
+form .btn {
+    width: 100%;
+    border: 0;
+}
+
+
+/*text-center*/
+
+.text-center {
+    text-align: center;
+}
+
+/*font zero*/
+
+.font-0 {
+    font-size: 0;
+}
+/*about*/
+
+.about{
+    background: #efefef;
+}
+
+
+.about-wrapper{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.about h2{
+    font-size: 36px;
+    color: var(--textdark);
+    text-transform: uppercase;
+}
+
+.about h2 strong {
+    font-weight: 700;
+}
+
+.about p{
+    margin: 32px 0;
+}
+
+.flex-50 img {
+    width: 100%;
+}
+
+/*blog*/
+.nav-btn {
+width: 60px;
+height: 60px;
+background: rgba(0,0,0,0.6);
+margin: 0 10px;
+}
+.nav-btn-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: white;
+}
+
+.nav-btn i {
+    color: white;
+}
+
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.nav-btn-container{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+}
+
+.article-col-left{
+    position: relative;
+}
+
+
+.article-col-right {
+    background: var(--primary);
+    padding: 32px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    left: -50px;
+    top: 0;
+}
+
+.article {
+    background: white;
+}
+
+.article h3 {
+    font-size: 32px;
+    margin-bottom:16px ;
+    
+}
+
+.article p{
+    margin-bottom: 16px;
+}
+
+.one{
+    left: 50px;
+}
+
+.two {
+    right: 340px;
 }
