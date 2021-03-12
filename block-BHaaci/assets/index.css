@@ -43,5 +43,125 @@ table {
 }
 
 
-h1{color: red;
-font-size: 32px;}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 32px;
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-48 {
+    flex: 0 1 48%;
+}
+
+
+main {
+    height: 100vh;
+    background: url(../assets/bg-intro-desktop.png) no-repeat , linear-gradient(#fd7979, #fd7979);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.heading {
+    font-size: 56px;
+    font-weight: 600;
+    color: white;
+}
+
+.text {
+    color: white;
+    margin-top: 24px;
+    font-size: 18px;
+}
+
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: 12px 20px;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.2);
+}
+
+.btn strong {
+    font-weight: 700;
+}
+.btn-primary {
+    background: #5d54a3;
+    font-weight: 300;
+    margin-bottom: 32px;
+}
+
+form {
+    background: white;
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.form-control {
+    display: inline-block;
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+   border: 1px solid grey;
+   font-size: 20px;
+   outline: 0;
+
+}
+
+.form-control:focus {
+    border-color: #37cc8a;
+}
+
+
+.btn-secondary {
+    border: 0;
+    box-shadow: none;
+    background: #37cc8a;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 16px 24px;
+}
+
+
+form p {
+ text-align: center;
+ font-size: 14px;
+ margin-top: 12px;
+ color: #cccc;
+
+}
+
+
+form p a {
+    color: pink;
+    font-weight: 600;
+}
