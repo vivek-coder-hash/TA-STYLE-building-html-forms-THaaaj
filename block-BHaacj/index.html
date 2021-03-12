@@ -5,8 +5,222 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/e7f5e19fd1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+      <header class="navbar">
+          <div class="container flex">
+              <a href="#" class="flex brand">
+                  <img src="assets\logo.png" alt="logo">
+                  <strong>Journey</strong>
+              </a>
+              <nav>
+                  <ul class="flex nav-menu">
+                      <li class="nav-menu-items">
+                          <a class="active" href="#">Home</a>
+                      </li>
+
+                      <li class="nav-menu-items">
+                        <a href="#">Top Destinations</a>
+                    </li>
+
+                    <li class="nav-menu-items">
+                        <a href="#">Recommended places</a>
+                    </li>
+
+                    <li class="nav-menu-items">
+                        <a href="#">contact us</a>
+                    </li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+
+      <main>
+          
+           <div class="container">
+            <section class="hero">
+                <h1 class="hero-heading">Let's Begin</h1>
+                <div class="flex justify-center">
+                    <div class="dot"></div>
+                <div class="dot dot-active"></div>
+                <div class="dot"></div>
+                </div>
+
+                
+                    <h4 class="hero-subheading">we assist you to choose best</h4>
+                
+
+                <div class="icon-box">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <form action="" class="flex align-start">
+                    <fieldset class="flex-46">
+                        <label for="destination">Choose Your Destination</label>
+                        <input type="text" id="destination" placeholder="Type Your Destination" name="destination" class="form-control">
+
+                        <div class="flex margin-top">
+                           <div>
+                            <label for="checkin">Checkin date</label>
+                            <input type="date" placeholder="Check In" id="checkin" name="checkin" class="form-control">
+                           </div>
+                           <div>
+                            <label for="checkout">checkout date</label>
+                            <input type="date" placeholder="Check Out" id="checkout" name="checkout" class="form-control">
+                           </div>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="flex-46">
+
+                        <div class="flex">
+                      <div>
+                        <label for="room">How many Rooms?</label>
+                        <select name="room" id="room">
+                            <option value="">1 Room</option>
+                            <option value="">2 Rooms</option>
+                            <option value="">3 Rooms</option>
+                        </select>
+                      </div>
+                            
+                        <div>
+                            <label for="adult">Adult</label>
+                        <select name="adult" id="adult" class="form-control">
+                            <option value="">1 Adult</option>
+                            <option value="">2 Adults</option>
+                            <option value="">3 Adults</option>
+                        </select>
+                        </div>
+
+                       <div>
+                        <label for="children">Children</label>
+                        <select name="children" id="children" class="form-control">
+                            <option value="">1 children</option>
+                            <option value="">2 childrens</option>
+                            <option value="">3 childrens</option>
+                        </select>
+                       </div>
+
+                    </div>
+                    <input class="btn btn-primary margin-top" type="submit" value="check availability">
+                    </fieldset>
+                </form>
+            </section>
+
+            <section class="padding text-center about">
+                <div class="about-wrapper">
+                    <h2>Your <strong>Journey</strong>  is our priority</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora veniam dolorem, expedita minus amet id, modi magni fugiat sequi suscipit obcaecati odit quod aspernatur vitae delectus, ab necessitatibus reprehenderit doloremque!</p>
+                <a class="btn btn-primary" href="#">Continue Explore</a>
+                </div>
+
+            </section>
+
+            <section>
+                <article class="flex article">
+                    <div class="flex-50 font-0 article-col-left">
+                        <div class="flex justify-end nav-btn-container">
+                            <div class="nav-btn center">
+                                <div class="nav-btn-icon">
+                                    <i class="fas fa-angle-left"></i>
+                                </div>
+                            </div>
     
+                            <div class="nav-btn center">
+                                <div class="nav-btn-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./assets/tm-img-01.jpg" alt="">
+                    </div>
+                    <div class="flex-50 article-col-right">
+                        <h3>Europe's Most visited places</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est iure nulla id expedita, atque fugit aliquam soluta minima quisquam? Accusantium sunt voluptatum exercitationem amet omnis sequi doloribus a sed officiis!</p>
+                        <a href="#" class="btn btn-secondary">Continue Reading</a>
+                    </div>
+                </article>
+
+                <article class="flex article">
+
+                    <div class="flex-50 article-col-right one">
+                        <h3>Europe's Most visited places</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est iure nulla id expedita, atque fugit aliquam soluta minima quisquam? Accusantium sunt voluptatum exercitationem amet omnis sequi doloribus a sed officiis!</p>
+                        <a href="#" class="btn btn-secondary">Continue Reading</a>
+                    </div>
+                    <div class="flex-50 font-0 article-col-left">
+                        <div class="flex justify-end nav-btn-container two">
+                            <div class="nav-btn center">
+                                <div class="nav-btn-icon">
+                                    <i class="fas fa-angle-left"></i>
+                                </div>
+                            </div>
+    
+                            <div class="nav-btn center">
+                                <div class="nav-btn-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./assets/tm-img-02.jpg" alt="">
+                    </div>
+                    
+                </article>
+
+                <article class="flex article">
+                    <div class="flex-50 font-0 article-col-left">
+                        <div class="flex justify-end nav-btn-container">
+                            <div class="nav-btn center">
+                                <div class="nav-btn-icon">
+                                    <i class="fas fa-angle-left"></i>
+                                </div>
+                            </div>
+    
+                            <div class="nav-btn center">
+                                <div class="nav-btn-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./assets/tm-img-03.jpg" alt="">
+                    </div>
+                    <div class="flex-50 article-col-right">
+                        <h3>Europe's Most visited places</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est iure nulla id expedita, atque fugit aliquam soluta minima quisquam? Accusantium sunt voluptatum exercitationem amet omnis sequi doloribus a sed officiis!</p>
+                        <a href="#" class="btn btn-secondary">Continue Reading</a>
+                    </div>
+                </article>
+
+                <article class="flex article">
+
+                    <div class="flex-50 article-col-right one">
+                        <h3>Europe's Most visited places</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est iure nulla id expedita, atque fugit aliquam soluta minima quisquam? Accusantium sunt voluptatum exercitationem amet omnis sequi doloribus a sed officiis!</p>
+                        <a href="#" class="btn btn-secondary">Continue Reading</a>
+                    </div>
+                    <div class="flex-50 font-0 article-col-left">
+                        <div class="flex justify-end nav-btn-container two">
+                            <div class="nav-btn center">
+                                <div class="nav-btn-icon">
+                                    <i class="fas fa-angle-left"></i>
+                                </div>
+                            </div>
+    
+                            <div class="nav-btn center">
+                                <div class="nav-btn-icon">
+                                    <i class="fas fa-angle-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="./assets/tm-img-04.jpg" alt="">
+                    </div>
+                    
+                </article>
+            </section>
+           </div>
+          
+      </main>
 </body>
 </html>
