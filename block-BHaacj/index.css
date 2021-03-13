@@ -387,3 +387,136 @@ margin: 0 10px;
 .two {
     right: 340px;
 }
+
+
+/*maps*/
+
+
+
+.maps .grow {
+    text-align: center;
+    font-size: 0;
+    background-color: var(--primary);
+}
+
+.maps .grow:hover{
+    background-color: var(--secondary);
+}
+
+.maps p{
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.maps .active {
+    background-color: violet;
+}
+
+.maps .padding {
+    padding: 60px 0;
+}
+
+
+.recommended-item {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: var(--primary);
+    margin: 24px auto;
+    box-shadow: 0 0 1px rgba(0,0,0,0.3);
+}
+
+.recommended-item img {
+    width: 100%;
+}
+
+
+.recommended-item-content {
+    padding: 32px;
+    background-color: white;
+    border-top-right-radius:70px ;
+    border-bottom-right-radius:70px ;
+   
+}
+
+.stretch{
+    align-items: stretch;
+}
+
+.recommended-item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.recommended-item h4{
+    font-size: 14px;
+    color: var(--secondary);
+    font-weight: 600;
+    margin-bottom: 14px;
+}
+
+.recommended-item p{
+    font-weight: 400;
+}
+
+
+.recommended-item-pricing h4{
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+
+}
+
+
+.recommended-item-pricing a{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+
+
+.last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.button{
+    text-align: center;
+}
+
+
+/*contact*/
+
+.contact{
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+.contact form {
+    position: absolute;
+    top: 30px;
+    bottom: 80px;
+    right: 80px;
+    width: 30%;
+    height: 340px;
+}
+
+.contact .form-control {
+    border: 1px solid var(--textdark);
+    margin-bottom: 16px;
+}
